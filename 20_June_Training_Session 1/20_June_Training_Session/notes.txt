@@ -1,0 +1,12 @@
+Data structures::
+    a) Data structures are Arrangements of data, differenct ways of retrieving or accessing data
+
+    b) Data structures are theoretical and philosophical. They have to be implemented through code.
+
+    c) Implementions of data structures on differenct platforms or in differenct libraries may differ in behaviour
+
+    d) There are infinite data structures in the world.
+
+    e) Data structures Implementions have to follow rules or syntax of the language.
+
+    f) 

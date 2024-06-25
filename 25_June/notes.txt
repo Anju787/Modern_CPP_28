@@ -1,0 +1,30 @@
+Make a software that  does something after account is registered with the bank
+  
+
+  DoSomething (action) {
+    action(emailID, number);
+  }
+
+  DoSomething (sendWelcomeEmail)
+  DoSomething(sendWhatsappmsg)
+
+  ->function are also objects in modern cpp so it can be also passed in the functions
+  ->so we can move them also like values
+  -> THere  are certain patterns : 
+  mapping pattern -s end logic and data and mapped one by one
+
+  filter pattern -
+
+
+
+
+
+
+
+  1) find vowels
+
+  Scenario 1 : string value has at least 1 vowel ---> print it
+  scenario 2: string has no vowel character ---> exception case ----> std::cerr
+  scenario 3 : input conatiner is blank---> exceptional ase---> break from the loops throw an exception
+  scenario 4 : a certain string is a blank---> exception case ---> std::cerr
+  

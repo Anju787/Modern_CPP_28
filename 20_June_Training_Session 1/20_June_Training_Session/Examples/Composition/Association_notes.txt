@@ -1,0 +1,18 @@
+Inheritance::
+    -FullTime IS A type of Employee
+    - Cricket IS A type of sport
+
+
+Composition:: When one class controls the lifetime of other class
+    - BankAccount HAS A DebitCard
+
+
+Aggregation :: Classes doesn't depend on each other.
+
+
+BankAccount :: 
+
+    There are two solutions for the problem
+        1) Using call by address::
+            put the debit card as a pointer in a BankAccount then while deleting delete the debit card first
+        2) Enable move constructor

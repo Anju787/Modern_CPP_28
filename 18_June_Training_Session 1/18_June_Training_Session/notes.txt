@@ -1,0 +1,71 @@
+Modern CPP
+    - All versions of C++ since C++11
+
+Cpp versions - C++11,C++14,C++17...
+
+5 weeks
+    A -> Essentials of Modern Cpp(fundamentals)
+    B -> Functional Programming in Modern CPP 
+    C -> Concurrency & C++ 17
+    D -> STL DS & Algorithms
+
+Features
+    1. In class initialization(we can provide the default values to the variable.)
+    2. Enum class usage to solve enum problems. 
+    3. defaulted and deleted (Enable and disable) member functions.
+        You can choose whether to enable or disable 6 special members functions for a 
+        class you are creating
+
+        a) Default constructor
+        b) destructor
+        c) copy constructor
+        d) copy assignment operator = (overload = operator)
+        e) move constructor (new feature in C++11)
+        f) move assignment operator = (overload = operator for move)
+    4. NULL is replaced with nullptr. //to differentiate between pointer null and 0
+    5. uniform initialize 
+        We can initialize variables in a function using {}
+    6. Member list initialization
+    7. auto keyword
+            detect and infer the type of variables Based on Initial value
+    8. Constructor delegation
+        You can transfer/shift constrol of the program from one constructor to another IN THE SAME CLASS 
+    9. Additional numberic types with specific size in memory
+    10. For-each (range-based for loop)
+    11. Emplace data in containers (in-place construction of values within the container)
+    12. "using" keyword is used to create an alias for the long datatypes.
+
+
+
+
+
+
+
+Employee ::
+    1.28
+    2.35
+    3.29
+
+Arrangements::
+    A) consecutively, one after the other in memory
+        a) No option for adding no data will be provided[Array]
+            [       28      |      35      |      29      ]
+                  0x100H          0x1004H        0x108H
+        b) We can add more data values if required, in future[Vector]
+            [       28      |       35      |       29  
+                0x100H          0x104H         0x108H
+
+    Vectors will slow down the process because if a new element is added
+    and if there is no space in consecutive location then the whole data is 
+    relocated to another memory location. 
+
+        Employee 4 : 36 
+            [       28      |       35      |       29      |////
+                 0x100H          0x1004H         0x108H      ////
+                    TRANSFER TO A NEW REGION IN MEMORY 
+             [       28      |       35      |       29      |////
+                    0x200H          0x204H         0x208H     ////
+    Hence vector arrangements is not the best choice for adding new data and storing.
+
+
+    
