@@ -1,0 +1,12 @@
+first employee---------first project
+
+in aggregation demo code ,
+
+- replace c -style arrays with vectors
+- Add a feature to filter employee  based on filter predicates
+(functional style) [filter lambda]
+
+given by the user (functional style) [mapping lambda]
+
+example : each employee gets 2000 rs bonus\
+example: each employee gets bonus = 100000 //project_team_size

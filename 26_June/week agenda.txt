@@ -1,0 +1,68 @@
+week agenda :
+
+week 2 :functional programming
+
+supplementary concepts
+
+1) conatiners in c++
+  -> vector and c - style array
+2) move semantics
+
+3) RAII classes
+
+4) Git version control
+
+5) command - line utilities
+
+6) How to interact with large scale projects
+
+7) recurssion and other styles of programming
+
+//iterators
+
+
+std::vector
+
+
+ 0                   20                30
+0*100H             0*104H            0*108H
+^                       ^                   |
+|                       |
+|                       |                   |
+|                       |                   |
+[0*100H      |     0*104H      |       0*120H  ]  
+
+
+
+
+std::list<T>
+ 
+0*111H                     0*200H                      0*800
+nullptr|10|0*200H          0*111h|20 | 0*800         0*200H |30|nullptr
+
+
+For consecutive elements
+
+from base-location to last element location (size - 1)
+-access element access
+  base address + (location * size of each element)
+
+
+
+  for linked list
+
+  from first location:
+  - deference to reach element access  it
+  - now read the address for the next element
+  - if next pointer is nullptr, break
+  - else, repeat steps.
+
+  Universal algorithm
+
+  -for every element fetched from the conatiner
+  (don't give a fuck, how you getit)
+  -access the element and do something with it
+
+  iterators are abstraction to pointer over elements.
+  
+
