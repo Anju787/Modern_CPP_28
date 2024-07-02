@@ -4,9 +4,9 @@
 
 
 /*
-std::function<T>  is a wrapper that can be used to reprsemt a callable of a certain
+std::function<T>  is a wrapper that can be used to represent a callable of a certain
 signature T
-SInce this entire datatype is lengthy , we can create an alias
+Since this entire datatype is lengthy , we can create an alias
 for it wuth using keyword.
 
 [](int32_t number) {return number % 2 ==0;} //lambda
