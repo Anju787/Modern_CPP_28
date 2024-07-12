@@ -1,0 +1,23 @@
+QUESTION 
+
+Class engine should have the following attributes
+ - engine_id of type string
+ - engine type which could be hybrid , ice or alternate_fuel
+ - engine _cc which is a float 
+ -engine_torque which is a float
+ -engine_horsepower which is an int value
+
+
+ Create the following functionalities in functional.cpp.
+ 1) Create 5 objects of the class engine on the heap. Attach a shared_ptr to each object created and emplace
+ these shared_ptr into a list conatiner
+
+         2) A function to return a container of shared_ptr pointing to objects which is 
+        satisfy the predicate condition passed
+ 
+        Hint : Accept a predicate, apply it on data container, identify objects that meet 
+        predicate condition and return a container of pointers to such objects
+ 
+        3) A function to find and return if at least one object meets a predicate condition passed
+ 
+        4) A function to find the average m_engine_cc and return the value

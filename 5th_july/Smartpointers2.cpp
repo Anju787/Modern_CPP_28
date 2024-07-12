@@ -37,43 +37,31 @@ class Data{
     
 };
 
+void Magic (std::unique_ptr<Data>&& temp)  {}
+
 int main(){
 
-    int32_t x{10};
-    char grade {'A'};
+    
    // int* ptr1  =  (int*)  malloc (4);
    // char* ptr2 = (char*) malloc(1);
 
-   std::unique_ptr<int> ptr1  {(int*) malloc(4)};
-   std::unique_ptr<int> ptr1  {new int()};
-   std::unique_ptr<char> ptr1  {(char*) malloc(1)};
+ // resource : 4 bytes mamory on the heap used by the data object with value 100
+   std::unique_ptr<Data> ptr4{new Data{100}};
 
-   //std::unique_ptr<Data> ptr4{new Data{100}};
+  Magic(std::move(ptr4));
 
-   Data* d1 {new Data{100}};
-   std::unique_ptr<Data>ptr4{d1};
-
-//if(true){
-   // std::cout<<*ptr1<<"\n";
-//}
-
-//else throw
-}
-
+  ptr4.reset(new Data{99});
 
 /*
+If programs requires copying/replicating things don't use unique pointers.
+no call by value
+no return by value.
+*/
 
-void CalculateResult(input value){
-allocate somethingon heap 
-ptr =healp memory address
 
-if(value == condition){
-do something with ptr}
-else {
-delete ptr;
-throw exception
 }
-}
+
+/*
 
  Three types of classes are made :  Smart pointers
  1) Weak pointer
@@ -82,4 +70,26 @@ throw exception
  3)
 
  dont make l value raw pointers
+
+
+
+WEEK 3
+
+CONCURRENCY
+ std::thread 
+ - joinable , mutex,   lock_guard, unique_lock
+
+ - std::Async_threads
+
+ cpp17
+
+ - std::variant 
+ -std::optional
+ -guranted copy elision
+ -structured binding
+
+ 
 */
+
+
+
